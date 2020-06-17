@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'my-pwa';
 
  constructor(private swPush: SwPush) {}
+ public message = 'Warning';
 
   async registerForPush() {
     const subscription = await this.swPush.requestSubscription({
@@ -25,6 +26,9 @@ export class AppComponent {
       (navigator as any).share({text: 'Hallo BASTA!'});
     } else {
       // use fallback
+
+      alert(this.message);
+
     }
 
   }
