@@ -12,7 +12,8 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js",
-          "ski.jpg"
+          "ski.jpg",
+          "australien.jpg"
         ]
       }
     }, {
