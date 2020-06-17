@@ -19,4 +19,13 @@ export class AppComponent {
 
     console.log(subscription);
   }
+
+  share() {
+    if ('share' in navigator) {
+      (navigator as any).share({text: 'Hallo BASTA!'});
+    } else {
+      // use fallback
+    }
+
+  }
 }
